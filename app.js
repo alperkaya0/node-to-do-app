@@ -21,6 +21,6 @@ app.post("/", function(req,res) {
     res.redirect("/");
 });
 
-app.listen(3001,function() {
+app.listen(3001 || process.env.PORT,function() {
     console.log("Server started at http://localhost:3001");
 });
